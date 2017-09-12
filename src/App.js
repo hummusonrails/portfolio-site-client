@@ -28,7 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <br /><br />
+
         < ReactRouter />
         <div className="footer">
           { Footer }
