@@ -12,7 +12,7 @@ class Home extends React.Component {
             <div className="content">
                 <Col lg={6} md={6}>
                   <br /><br />
-                  <img src="/images/bg-header-img.jpg" width="70%" alt="Ben Greenberg" />
+                  <img src="/bg-header-img.jpg" width="70%" alt="Ben Greenberg" />
                 </Col>
             </div>
 
