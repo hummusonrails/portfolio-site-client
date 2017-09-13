@@ -23,9 +23,8 @@ const NavbarInstance = (
               <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog
                 <span className="caret"></span></a>
               <ul className="dropdown-menu">
-                <li><LinkContainer to="/blog/tech-postings/"><a href="/blog/tech-postings">Tech Posts</a></LinkContainer></li>
-                <li><LinkContainer to="/blog/jewish-postings/"><a href="/blog/jewish-postings">Jewish Posts</a></LinkContainer></li>
-                <li><LinkContainer to="/blog/all-postings"><a href="/blog/all-postings">All Posts</a></LinkContainer></li>
+                <li><LinkContainer to="/blog/tech"><a href="/blog/tech">Tech Posts</a></LinkContainer></li>
+                <li><LinkContainer to="/blog/jewish"><a href="/blog/jewish">Jewish Posts</a></LinkContainer></li>
               </ul>
             </li>
           </ul>

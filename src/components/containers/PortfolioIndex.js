@@ -31,8 +31,8 @@ class PortfolioIndex extends React.Component {
 
 const mapStateToProps = (state) => {
   return ({
-    listings: state.listings,
-    finishedLoading: state.finishedLoading
+    listings: state.PortfolioReducer.listings,
+    finishedLoading: state.PortfolioReducer.finishedLoading
   })
 }
 export default connect(mapStateToProps, { loadPortfolio })(PortfolioIndex);

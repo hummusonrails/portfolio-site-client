@@ -15,7 +15,7 @@ class PortfolioCard extends React.Component {
                 <img src={this.props.listing.image} alt={this.props.listing.name} className="img-thumbnail" width="40%" height="50%"/>
               </Col>
               <Col md={7} lg={7}>
-                <strong><h4 id="blog-content"><a href={"/portfolio/show/" + this.props.listing.id}>{this.props.listing.name}</a></h4></strong>
+                <strong><h2 id="blog-lead">{this.props.listing.name}</h2></strong>
                 {this.props.listing.description}
                 <br /><br />
                 { this.props.listing.link ?

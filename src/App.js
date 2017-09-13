@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import NavbarInstance from './components/Navbar';
 import PortfolioIndex from './components/containers/PortfolioIndex';
+import TechBlogIndex from './components/containers/TechBlogIndex';
+import JewishBlogIndex from './components/containers/JewishBlogIndex';
 
 const ReactRouter = () => (
   <Router>
@@ -21,6 +23,8 @@ const ReactRouter = () => (
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/portfolio" component={PortfolioIndex}/>
+        <Route exact path="/blog/tech" component={TechBlogIndex}/>
+        <Route exact path="/blog/jewish" component={JewishBlogIndex}/>
       </Switch>
     </div>
   </Router>
