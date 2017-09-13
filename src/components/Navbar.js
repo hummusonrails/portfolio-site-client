@@ -6,7 +6,7 @@ const NavbarInstance = (
   <Navbar inverse collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <LinkContainer to="/">Home</LinkContainer>
+        <a href="#"><LinkContainer to="/">Home</LinkContainer></a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
