@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, DropdownButton } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const NavbarInstance = (
@@ -19,14 +19,10 @@ const NavbarInstance = (
           <ul className="nav navbar-nav">
             <li className="active"><LinkContainer to="/"><a href="/">Home</a></LinkContainer></li>
             <li><LinkContainer to="/portfolio"><a href="/portfolio">Portfolio</a></LinkContainer></li>
-            <li className="dropdown">
-              <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog
-                <span className="caret"></span></a>
-              <ul className="dropdown-menu">
-                <li><LinkContainer to="/blog/tech"><a href="/blog/tech">Tech Posts</a></LinkContainer></li>
-                <li><LinkContainer to="/blog/jewish"><a href="/blog/jewish">Jewish Posts</a></LinkContainer></li>
-              </ul>
-            </li>
+            <NavDropdown eventKey={3} title="Blog" id="basic-nav-dropdown">
+              <MenuItem eventKey={3.1}><li><LinkContainer to="/blog/tech"><a href="/blog/tech">Tech Posts</a></LinkContainer></li></MenuItem>
+              <MenuItem eventKey={3.2}><li><LinkContainer to="/blog/jewish"><a href="/blog/jewish">Jewish Posts</a></LinkContainer></li></MenuItem>
+            </NavDropdown>
           </ul>
           <ul className="nav navbar-nav navbar-right">
             <li className="active"><LinkContainer to="/contact"><a href="/contact">Contact <span className="sr-only">(current)</span></a></LinkContainer></li>
