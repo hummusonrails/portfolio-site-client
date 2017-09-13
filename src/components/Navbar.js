@@ -6,20 +6,20 @@ const NavbarInstance = (
   <Navbar inverse collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="/">Home</a>
+        <LinkContainer to="/">Home</LinkContainer>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <NavItem eventKey={1} href="/portfolio">Portfolio</NavItem>
+        <NavItem eventKey={1}><LinkContainer to="/portfolio">Portfolio</LinkContainer></NavItem>
         <NavDropdown eventKey={2} title="Blog" id="basic-nav-dropdown">
-          <MenuItem eventKey={2.1} href="/blog/tech">Tech Posts</MenuItem>
-          <MenuItem eventKey={2.2} href="/blog/jewish">Jewish Posts</MenuItem>
+          <MenuItem eventKey={2.1}><LinkContainer to="/blog/tech">Tech Posts</LinkContainer></MenuItem>
+          <MenuItem eventKey={2.2}><LinkContainer to="/blog/jewish">Jewish Posts</LinkContainer></MenuItem>
         </NavDropdown>
       </Nav>
       <Nav pullRight>
-        <NavItem eventKey={1} href="/contact">Contact</NavItem>
+        <NavItem eventKey={1}><LinkContainer to="/contact">Contact</LinkContainer></NavItem>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
