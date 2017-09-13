@@ -22,7 +22,7 @@ class PortfolioIndex extends React.Component {
 
     return (
       <div>
-        <h1>Portfolio:</h1>
+        <h1 id="blog-title">Portfolio Projects</h1>
         {renderPortfolioCards}
       </div>
     );
