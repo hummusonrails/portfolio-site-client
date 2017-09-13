@@ -18,7 +18,7 @@ const NavbarInstance = (
         <div id="navbar" className="navbar-collapse collapse">
           <ul className="nav navbar-nav">
             <li className="active"><LinkContainer to="/"><a href="/">Home</a></LinkContainer></li>
-            <li><LinkContainer to="/portfolio/main"><a href="/portfolio/main">Portfolio</a></LinkContainer></li>
+            <li><LinkContainer to="/portfolio"><a href="/portfolio">Portfolio</a></LinkContainer></li>
             <li className="dropdown">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog
                 <span className="caret"></span></a>

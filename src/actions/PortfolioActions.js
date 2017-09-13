@@ -6,7 +6,7 @@ export function loadPortfolio() {
     data: JSON.stringify()
   };
 
-  fetch('/api/portfolio/index.json' + request)
+  fetch('http://www.bengreenberg.org/api/portfolio/index.json', request)
     .then(data => data.json())
     .then(data => dispatch({ type: 'LOAD_PORTFOLIO', data: data }))
   }

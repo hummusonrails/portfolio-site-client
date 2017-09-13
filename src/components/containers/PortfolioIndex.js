@@ -11,20 +11,28 @@ class PortfolioIndex extends React.Component {
 
   render() {
 
-  const renderPortfolioCards = null
-    // this.props.jobs !== undefined && this.props.jobs.length !== 0 ?
-    //   this.props.jobs.map(job =>
-    //     <JobCard job={job} key={job.cacheId} />)
-    //   :
-    //   this.state.firstJobs.map(job =>
-    //     <JobCard job={job} key={job.cacheId} />)
+    var sortedPortfolio =
+      this.props.listings.sort(function(listing1, listing2) {
+        return listing2.id - listing1.id;
+      })
+
+    const renderPortfolioCards =
+      sortedPortfolio.map(listing =>
+        <PortfolioCard listing={listing} key={listing.id} />)
 
     return (
       <div>
         <h1>Portfolio:</h1>
-    </div>
+        {renderPortfolioCards}
+      </div>
     );
   }
 }
 
-export default connect(null, { loadPortfolio })(PortfolioIndex);
+const mapStateToProps = (state) => {
+  return ({
+    listings: state.listings,
+    finishedLoading: state.finishedLoading
+  })
+}
+export default connect(mapStateToProps, { loadPortfolio })(PortfolioIndex);

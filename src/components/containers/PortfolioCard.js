@@ -11,7 +11,10 @@ class PortfolioCard extends React.Component {
 
     return (
       <div className="JobCardBox">
-      <h1>Stuff will go here</h1>
+        <div className={this.props.listing.id}>
+          <h3><a href={this.props.listing.link}>{this.props.listing.name}</a></h3>
+          <p>{this.props.listing.description}</p>
+        </div>
       </div>
     );
   }

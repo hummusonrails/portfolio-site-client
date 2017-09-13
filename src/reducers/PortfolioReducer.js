@@ -1,5 +1,5 @@
 let initialState = {
-  portfolio: [],
+  listings: [],
   finishedLoading: false
 }
 
@@ -7,7 +7,7 @@ function PortfolioReducer(state = initialState, action) {
   switch (action.type) {
     case 'LOAD_PORTFOLIO':
       return Object.assign({}, state, {
-        portfolio: action.data,
+        listings: action.data,
         finishedLoading: true
       })
     default:
