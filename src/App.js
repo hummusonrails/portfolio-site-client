@@ -11,6 +11,7 @@ import NavbarInstance from './components/Navbar';
 import PortfolioIndex from './components/containers/PortfolioIndex';
 import TechBlogIndex from './components/containers/TechBlogIndex';
 import JewishBlogIndex from './components/containers/JewishBlogIndex';
+import Contact from './components/Contact';
 
 const ReactRouter = () => (
   <Router>
@@ -25,6 +26,7 @@ const ReactRouter = () => (
         <Route exact path="/portfolio" component={PortfolioIndex}/>
         <Route exact path="/blog/tech" component={TechBlogIndex}/>
         <Route exact path="/blog/jewish" component={JewishBlogIndex}/>
+        <Route exact path="/contact" component={Contact}/>
       </Switch>
     </div>
   </Router>
