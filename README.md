@@ -1,5 +1,5 @@
 # ReactJS with Redux Portfolio Site Client Front End
-## Ben Greenberg
+Ben Greenberg
 
 
 ## About
