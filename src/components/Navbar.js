@@ -6,7 +6,7 @@ const NavbarInstance = (
   <div>
     <nav className="navbar navbar-default">
       <div className="container-fluid">
-        <div className="navbar-header">
+        <Navbar.Header>
           <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"    aria-expanded="false" aria-controls="navbar">
             <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>
@@ -14,7 +14,8 @@ const NavbarInstance = (
             <span className="icon-bar"></span>
           </button>
           <a className="navbar-brand" href="/"></a>
-        </div>
+        <Navbar.Toogle />
+        </Navbar.Header>
         <div id="navbar" className="navbar-collapse collapse">
           <ul className="nav navbar-nav">
             <li className="active"><LinkContainer to="/"><a href="/">Home</a></LinkContainer></li>
