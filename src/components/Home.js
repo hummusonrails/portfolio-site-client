@@ -11,7 +11,7 @@ class Home extends React.Component {
           <Row className="show-grid">
             <div className="content">
                 <Col lg={6} md={6}>
-                  <br />
+                  <br /><br />
                   <img src="/images/bg-header-img.jpg" width="70%" />
                 </Col>
             </div>
