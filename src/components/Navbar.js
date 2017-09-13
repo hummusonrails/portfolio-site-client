@@ -14,7 +14,6 @@ const NavbarInstance = (
             <span className="icon-bar"></span>
           </button>
           <a className="navbar-brand" href="/"></a>
-          <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
         <div id="navbar" className="navbar-collapse collapse">
