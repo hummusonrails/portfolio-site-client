@@ -4,14 +4,12 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const NavbarInstance = (
   <Navbar inverse collapseOnSelect>
-    <Navbar.Header>
       <Navbar.Brand>
         <LinkContainer to="/">
           <NavItem eventKey={1}>Home</NavItem>
         </LinkContainer>
       </Navbar.Brand>
       <Navbar.Toggle />
-    </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
         <LinkContainer to="/portfolio">
