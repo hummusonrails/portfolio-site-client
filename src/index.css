@@ -188,6 +188,10 @@ text-align: center;
     padding-bottom: 0px;
   }
 
+  .container .container-fluid {
+    padding-top: 20em;
+  }
+
   #title-heading {
   font-family: 'Abril Fatface', cursive;
   font-size: 50%;
