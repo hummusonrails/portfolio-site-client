@@ -180,12 +180,12 @@ text-align: center;
   and (-webkit-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-  .App-header {
+  .App-header .container {
     background-color: #222;
-    height: 100px;
+    height: 60px;
     padding: 20px;
     color: white;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
 
   #title-heading {
@@ -201,9 +201,16 @@ text-align: center;
 
   #title-linethree {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 150%;
+    font-size: 50%;
     color: white;
     display: inline-block;
+  }
+
+  #blog-title {
+    font-family: 'Trocchi', serif;
+    color: white;
+    font-size: 50%;
+    text-shadow: 2px 4px 3px gray;
   }
 
 }
