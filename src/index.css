@@ -1,3 +1,7 @@
+/* CSS styling sheet */
+
+/* Main App styling */
+
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Permanent+Marker|Trocchi|Abril+Fatface|Open+Sans+Condensed:300');
 
 .App {
@@ -43,6 +47,8 @@ h1, h2, h3, h4, h5, p {
   padding: 0 0 60px;
 }
 
+/* Header Title Styling */
+
 #title-heading {
 font-family: 'Abril Fatface', cursive;
 font-size: 300%;
@@ -65,6 +71,8 @@ color: white;
   display: inline-block;
 }
 
+/* Main Content Styling */
+
 #page-title {
   font-family: 'Trocchi', serif;
   color: white;
@@ -84,6 +92,7 @@ color: white;
   color: white;
 }
 
+/* Footer */
 
 /* Set the fixed height of the footer here */
 .footer {
@@ -99,6 +108,8 @@ color: white;
 .container .credit {
   margin: 20px 0;
 }
+
+/* Portfolio and Blog Listings Styling */
 
 .item-listing {
   background-color: #DDDDDD;
@@ -150,6 +161,8 @@ text-align: center;
   color: red;
 }
 
+/* Navigation Bar Styling */
+
 .navbar-inverse {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -157,4 +170,40 @@ text-align: center;
   width: 100vw;
   position: relative;
   z-index: 1;
+}
+
+/* Mobile Device Styling */
+
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  .App-header {
+    background-color: #222;
+    height: 100px;
+    padding: 20px;
+    color: white;
+    padding-bottom: 80px;
+  }
+
+  #title-heading {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 150%;
+  color: white;
+  }
+
+  #title-linetwo {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+  }
+
+  #title-linethree {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 150%;
+    color: white;
+    display: inline-block;
+  }
+
 }
