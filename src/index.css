@@ -172,6 +172,15 @@ text-align: center;
   z-index: 1;
 }
 
+.navbar-default {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
 /* Mobile Device Styling */
 
 @media screen
