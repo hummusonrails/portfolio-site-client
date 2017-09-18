@@ -2,16 +2,16 @@ import React from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
+var Brand = <LinkContainer to="/" className='navbar-brand'><NavItem eventKey={1}>Home</NavItem></LinkContainer>
+
 const NavbarInstance = (
-  <Navbar inverse collapseOnSelect>
-      <Navbar.Brand>
-        <LinkContainer to="/">
-          <NavItem eventKey={1}>Home</NavItem>
-        </LinkContainer>
-      </Navbar.Brand>
+  <Navbar brand={Brand}>
       <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav>
+        <LinkContainer to="/">
+          <NavItem eventKey={1}>Home</NavItem>
+        </LinkContainer>
         <LinkContainer to="/portfolio">
           <NavItem eventKey={2}>Portfolio</NavItem>
         </LinkContainer>
