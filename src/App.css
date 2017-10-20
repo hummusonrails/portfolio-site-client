@@ -10,11 +10,10 @@
 }
 
 .App-header {
+  display: flex;
+  flex-direction: column;
   background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
-  padding-bottom: 142px;
 }
 
 .App-intro {
@@ -34,6 +33,10 @@ body {
 .Routes {
   background-color: black;
   padding-bottom: 70px;
+}
+
+.Routes .navbar {
+  margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -148,8 +151,4 @@ text-align: center;
 
 #flash {
   color: red;
-}
-
-.navbar {
-  margin-bottom: 20px;
 }
