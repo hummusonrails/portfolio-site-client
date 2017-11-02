@@ -6,7 +6,7 @@ class Home extends React.Component {
   componentDidMount() {
     if (window.location.search) {
       let company = decodeURI(window.location.search.split("=")[1])
-      alert("Hi " + company + "!\n\nWelcome to Ben's website!\n\nI'm so glad you're here. Feel free to take a look at his projects and his recent blog posts. I look forward to hearing what you think, but since I'm just a piece of Javascript code I don't really have lots of opinions, but I know Ben would love to hear from you.\n\nEnjoy your visit!")
+      alert("Hi " + company + "!\n\nWelcome to Ben's website!\n\nI'm so glad you're here. Feel free to take a look at his projects and his recent blog posts. I look forward to hearing what you think, but since I'm just a piece of Javascript code I don't really have lots of opinions. I know however that Ben would love to hear from you.\n\nEnjoy your visit!")
     }
   }
 
