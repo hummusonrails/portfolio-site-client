@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid, Col, Row } from 'react-bootstrap';
-import { connect } from 'react-redux';
 
 class PortfolioCard extends React.Component {
 
@@ -19,16 +18,16 @@ class PortfolioCard extends React.Component {
                 {this.props.listing.description}
                 <br /><br />
                 { this.props.listing.link ?
-                  <a href={this.props.listing.link}><img src="/github_icon.png" width="10%"/></a> : null
+                  <a href={this.props.listing.link}><img src="/github_icon.png" width="10%" alt="github link" /></a> : null
                 }
                 { this.props.listing.youtube_link ?
-                <a href={this.props.listing.youtube_link}><img src="/youtube_icon.png" width="10%"/></a> : null
+                <a href={this.props.listing.youtube_link}><img src="/youtube_icon.png" width="10%" alt="youtube link" /></a> : null
                 }
                 { this.props.listing.website_link ?
-                <a href={this.props.listing.website_link}><img src="/www_icon.png" width="10%"/></a> : null
+                <a href={this.props.listing.website_link}><img src="/www_icon.png" width="10%" alt="website link" /></a> : null
                 }
                 { this.props.listing.blog_link ?
-                <a href={this.props.listing.blog_link}><img src="/blog_icon.png" width="10%"/></a> : null
+                <a href={this.props.listing.blog_link}><img src="/blog_icon.png" width="10%" alt="blog link" /></a> : null
                 }
               </Col>
             </div>

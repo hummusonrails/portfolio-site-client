@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid, Col, Row } from 'react-bootstrap';
-import { connect } from 'react-redux';
 
 class BlogCard extends React.Component {
 
