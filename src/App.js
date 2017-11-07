@@ -12,6 +12,7 @@ import PortfolioIndex from './components/containers/PortfolioIndex';
 import TechBlogIndex from './components/containers/TechBlogIndex';
 import JewishBlogIndex from './components/containers/JewishBlogIndex';
 import Contact from './components/Contact';
+import ReactGA from 'react-ga';
 
 const ReactRouter = () => (
   <Router>
@@ -34,6 +35,8 @@ const ReactRouter = () => (
 
 class App extends Component {
   render() {
+    ReactGA.initialize('UA-102303776-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
       <div className="App">
 
