@@ -1,0 +1,18 @@
+
+
+#fullpage {
+  background-color: #ADD8E6;
+}
+
+h1, h2, h3, h4, p {
+  color: black;
+}
+
+#page-title {
+  color: black;
+}
+
+
+#headshot {
+  border-radius: 20%;
+}
