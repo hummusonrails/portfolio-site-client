@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import fullpage from 'fullpage.js';
 import $ from 'jquery';
 import { loadTechBlog } from '../../actions/BlogActions';
 import { loadPortfolio } from '../../actions/PortfolioActions';
