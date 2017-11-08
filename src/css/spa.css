@@ -1,4 +1,19 @@
+.Routes {
+  background-color: #ADD8E6;
+  position: fixed;
+}
 
+.navbar {
+  position: fixed;
+}
+
+.footer {
+  position: fixed;
+}
+
+.footer .show-grid {
+  text-align: center;
+}
 
 #fullpage {
   background-color: #ADD8E6;
