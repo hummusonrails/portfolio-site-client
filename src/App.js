@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 //import Header from './components/Header';
 import Footer from './components/Footer';
-import NavbarInstance from './components/Navbar';
+// import NavbarInstance from './components/Navbar';
 import SPA from './components/containers/SPA';
 import ReactGA from 'react-ga';
 

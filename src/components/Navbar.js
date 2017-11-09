@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 var Brand = <LinkContainer to="/" className='navbar-brand'><NavItem eventKey={1}>Home</NavItem></LinkContainer>

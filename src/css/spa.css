@@ -20,6 +20,10 @@
   background-color: #ADD8E6;
 }
 
+.section {
+  margin-bottom: 10px;
+}
+
 #opening {
   margin-top: 15%;
 }
