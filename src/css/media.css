@@ -4,20 +4,29 @@
     width: 30%;
   }
 
+  /* header sizes */
+  
   #page-title {
     font-family: 'Fredericka the Great', cursive;
     font-size: 2em;
     color: black;
   }
-
   #subtitle {
     font-family: 'Trocchi', serif;
     font-size: 1em;
   }
 
+  /* content text */
+
   #index-content {
     font-family: 'Trocchi', serif;
     font-size: 0.8em;
+  }
+
+  /* welcome paragraphs */
+
+  #paragraph1 {
+    display: none;
   }
 
 }
