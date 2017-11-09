@@ -8,6 +8,7 @@ import SPAPortfolioCard from './SPAPortfolioCard';
 import SPAWelcome from '../SPAWelcome';
 import SPAContact from '../SPAContact';
 import {emojify} from 'react-emojione';
+import MetaTags from 'react-meta-tags';
 
 class SPA extends React.Component {
 
@@ -106,14 +107,29 @@ class SPA extends React.Component {
         <SPAPortfolioCard listing={listing} key={listing.id} />)
 
     return (
+      <MetaTags>
+        <meta property="og:title" content="Ben Greenberg: Full Stack Web Developer"/>
+        <meta property="og:description" content="Find Ben Greenberg's latest
+        portfolio projects and blog posts and get in touch with him."/>
+        <meta property="og:image" content="http://bengreenberg.org/bg-headshot.jpg"/>
+        <meta name="twitter:title" content="Ben Greenberg: Full Stack Web Developer"/>
+        <meta name="twitter:description" content="Find Ben Greenberg's latest
+        portfolio projects and blog posts and get in touch with him."/>
+        <meta name="twitter:image" content="http://bengreenberg.org/bg-headshot.jpg"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+      </MetaTags>
+
       <SectionsContainer {...options}>
+
       	<Section>
           <div id="opening">
             <h1>Hi! {emojify(':wave:')}</h1>
             <h1><div className="emoji">{emojify(':point_down:')}</div></h1>
           </div>
         </Section>
+
       	<Section><SPAWelcome/></Section>
+
         <Section>
             <h1 id="page-title">Recent Portfolio Items</h1>
             <p id="subtitle">Visit my
@@ -124,6 +140,7 @@ class SPA extends React.Component {
             <br />
             {renderPortfolioCards}
         </Section>
+
       	<Section>
           <h1 id="page-title">Recent Blog Posts</h1>
           <p id="subtitle">Visit my
@@ -133,9 +150,11 @@ class SPA extends React.Component {
           <br />
           {renderBlogCards}
         </Section>
+
       	<Section>
           <SPAContact />
         </Section>
+        
       </SectionsContainer>
     );
   }
