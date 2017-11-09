@@ -9,24 +9,19 @@ const NavbarInstance = (
       <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav>
-        <LinkContainer to="/">
+        <LinkContainer to="/spa/#welcome">
           <NavItem eventKey={1}>Home</NavItem>
         </LinkContainer>
-        <LinkContainer to="/portfolio">
+        <LinkContainer to="#portfolio">
           <NavItem eventKey={2}>Portfolio</NavItem>
         </LinkContainer>
-        <NavDropdown eventKey={3} title="Blog" id="basic-nav-dropdown">
-          <LinkContainer to="/blog/tech">
-            <MenuItem eventKey={3.1}>Tech Posts</MenuItem>
-          </LinkContainer>
-          <LinkContainer to="/blog/jewish">
-            <MenuItem eventKey={3.2}>Jewish Posts</MenuItem>
-          </LinkContainer>
-        </NavDropdown>
+        <LinkContainer to="#blog">
+          <NavItem eventKey={3}>Blog</NavItem>
+        </LinkContainer>
       </Nav>
       <Nav pullRight>
-        <LinkContainer to="/contact">
-          <NavItem eventKey={1}>Contact</NavItem>
+        <LinkContainer to="#contact">
+          <NavItem eventKey={4}>Contact</NavItem>
         </LinkContainer>
       </Nav>
     </Navbar.Collapse>
