@@ -25,32 +25,14 @@
   to { transform: rotate(360deg); }
 }
 
-body {
-  background-color: black;
-  padding-bottom: 0;
-}
-
-.Routes {
-  background-color: black;
-  padding-bottom: 70px;
-}
-
 .Routes .navbar {
   margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, p {
-  color: white;
+  color: black;
 }
 
-#wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
-}
 
 #title-heading {
 font-family: 'Abril Fatface', cursive;
@@ -123,7 +105,7 @@ color: white;
 }
 
 .blog-listing {
-  background-color: #f8f8f8;
+  background-color: white;
   border: 2px solid #535353;
 }
 

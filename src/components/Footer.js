@@ -5,7 +5,7 @@ const Footer = (
         <Grid fluid={true}>
           <Row className="show-grid">
             <Col mdPush={5}>
-              &copy; 2017 Rabbi Ben Greenberg. All Rights Reserved.
+              &copy; 2017 Ben Greenberg. All Rights Reserved.
               <a href="https://bengreenberg.herokuapp.com/admin/login"><img src="/key-icon.png" width="60" alt="admin key" /></a>
             </Col>
           </Row>

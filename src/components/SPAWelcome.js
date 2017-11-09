@@ -1,14 +1,7 @@
 import React from 'react';
 import { Grid, Col, Row } from 'react-bootstrap';
 
-class Home extends React.Component {
-
-  componentDidMount() {
-    if (window.location.search) {
-      let company = decodeURI(window.location.search.split("=")[1])
-      setTimeout(function(){ alert("Hi " + company + "!\n\nWelcome to Ben's website!\n\nI'm so glad you're here. Feel free to take a look at his projects and his recent blog posts. I look forward to hearing what you think, but since I'm just a piece of Javascript code I don't really have lots of opinions. I know however that Ben would love to hear from you.\n\nEnjoy your visit!"); }, 1500);
-    }
-  }
+class SPAWelcome extends React.Component {
 
   render() {
 
@@ -20,12 +13,12 @@ class Home extends React.Component {
             <div className="content">
                 <Col lg={6} md={6}>
                   <br /><br />
-                  <img src="/bg-header-img.jpg" width="70%" alt="Ben Greenberg" />
+                  <img src="/bg-headshot.jpg" width="70%" alt="Ben Greenberg" id="headshot" className="hvr-pop"/>
                 </Col>
             </div>
 
               <Col lg={6} md={6}>
-                <br /><br /><br /><br />
+
                 <p id="page-title">Welcome!</p>
                 <div id="index-content">
                   <p>I have worked for nearly 10 years as a communal rabbi, non-profit professional and community organizer. During the past decade I've served communities and organizations in Boston, Denver, Chicago and New York. Throughout my non-profit career I've been fortunate to work closely with college students on campus, organize for a better society, teach adult education and create and lead new departments and teams.</p>
@@ -45,4 +38,4 @@ class Home extends React.Component {
     }
   }
 
-export default Home;
+export default SPAWelcome;
