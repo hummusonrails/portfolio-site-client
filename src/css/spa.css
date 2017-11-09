@@ -49,9 +49,6 @@ h1, h2, h3, h4, p {
   box-shadow: 10px 10px 5px grey;
 }
 
-#headshot:hover {
-}
-
 #blog-title {
   font-family: 'Trocchi', serif;
   color: white;
@@ -97,8 +94,8 @@ h1, h2, h3, h4, p {
 /* hover effects */
 
 .emoji:hover {
-  display: block;
   width: auto;
+  display: block;
   transform: scale(1.1);
 }
 
