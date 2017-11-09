@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './css/spa.css';
+import './css/media.css';
 import {
   BrowserRouter as Router,
   Route, Switch

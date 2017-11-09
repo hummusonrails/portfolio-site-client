@@ -55,7 +55,7 @@ class SPA extends React.Component {
   		resetSliders: false,
   		fadingEffect: false,
   		normalScrollElements: '',
-  		scrollOverflow: false,
+  		scrollOverflow: true,
   		scrollOverflowReset: false,
   		scrollOverflowOptions: null,
   		touchSensitivity: 15,
