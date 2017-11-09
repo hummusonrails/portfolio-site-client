@@ -13,12 +13,12 @@ class SPAWelcome extends React.Component {
             <div className="content">
                 <Col lg={6} md={6}>
                   <br /><br />
-                  <img src="/bg-header-img.jpg" width="70%" alt="Ben Greenberg" id="headshot"/>
+                  <img src="/bg-headshot.jpg" width="70%" alt="Ben Greenberg" id="headshot" className="hvr-pop"/>
                 </Col>
             </div>
 
               <Col lg={6} md={6}>
-                <br /><br /><br /><br />
+
                 <p id="page-title">Welcome!</p>
                 <div id="index-content">
                   <p>I have worked for nearly 10 years as a communal rabbi, non-profit professional and community organizer. During the past decade I've served communities and organizations in Boston, Denver, Chicago and New York. Throughout my non-profit career I've been fortunate to work closely with college students on campus, organize for a better society, teach adult education and create and lead new departments and teams.</p>

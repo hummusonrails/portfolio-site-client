@@ -1,31 +1,33 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import fullpage from 'fullpage.js';
-import $ from 'jquery';
+import {SectionsContainer, Section} from 'react-fullpage';
 import { loadTechBlog } from '../../actions/BlogActions';
 import { loadPortfolio } from '../../actions/PortfolioActions';
-import BlogCard from './BlogCard';
-import PortfolioCard from './PortfolioCard';
+import SPABlogCard from './SPABlogCard';
+import SPAPortfolioCard from './SPAPortfolioCard';
 import SPAWelcome from '../SPAWelcome';
-
+import SPAContact from '../SPAContact';
 
 class SPA extends React.Component {
 
   componentDidMount() {
+    if (window.location.search) {
+      let company = decodeURI(window.location.search.split("=")[1])
+      setTimeout(function(){ alert("Hi " + company + "!\n\nWelcome to Ben's website!\n\nI'm so glad you're here. Feel free to take a look at his projects and his recent blog posts. I look forward to hearing what you think, but since I'm just a piece of Javascript code I don't really have lots of opinions. I know however that Ben would love to hear from you.\n\nEnjoy your visit!"); }, 1500);
+    }
     this.props.loadTechBlog();
     this.props.loadPortfolio();
   }
 
   render() {
 
-    $(document).ready(function() {
-	   $('#fullpage').fullpage({
+    let options = {
   		//Navigation
   		menu: '.navbar',
   		lockAnchors: false,
-  		anchors:['firstPage', 'secondPage'],
+  		anchors:['greeting', 'welcome', 'portfolio', 'blog', 'contact'],
   		navigation: true,
-  		navigationPosition: 'right',
+  		navigationPosition: 'left',
   		navigationTooltips: ['', 'welcome', 'portfolio', 'blog', 'contact'],
   		showActiveTooltip: true,
   		slidesNavigation: false,
@@ -35,7 +37,7 @@ class SPA extends React.Component {
   		css3: true,
   		scrollingSpeed: 700,
   		autoScrolling: true,
-  		fitToSection: true,
+  		fitToSection: false,
   		fitToSectionDelay: 1000,
   		scrollBar: false,
   		easing: 'easeInOutCubic',
@@ -51,7 +53,7 @@ class SPA extends React.Component {
   		offsetSections: false,
   		resetSliders: false,
   		fadingEffect: false,
-  		normalScrollElements: '#element1, .element2',
+  		normalScrollElements: '',
   		scrollOverflow: false,
   		scrollOverflowReset: false,
   		scrollOverflowOptions: null,
@@ -69,7 +71,7 @@ class SPA extends React.Component {
   		verticalCentered: true,
   		paddingTop: '3em',
   		paddingBottom: '10px',
-  		fixedElements: '.navbar, .footer',
+  		fixedElements: '.footer',
   		responsiveWidth: 0,
   		responsiveHeight: 0,
   		responsiveSlides: false,
@@ -81,17 +83,9 @@ class SPA extends React.Component {
   		slideSelector: '.slide',
 
   		lazyLoading: true,
+	  };
 
-  		//events
-  		onLeave: function(index, nextIndex, direction){},
-  		afterLoad: function(anchorLink, index){},
-  		afterRender: function(){},
-  		afterResize: function(){},
-  		afterResponsive: function(isResponsive){},
-  		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-  		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-	  });
-  });
+    const emoji = require('node-emoji');
 
     var sortedBlog =
       this.props.blogPosts.sort(function(posting1, posting2) {
@@ -104,21 +98,45 @@ class SPA extends React.Component {
       })
 
     const renderBlogCards =
-      sortedBlog.map(posting =>
-        <BlogCard posting={posting} key={posting.id} />)
+      sortedBlog.slice(0, 3).map(posting =>
+        <SPABlogCard posting={posting} key={posting.id} />)
 
     const renderPortfolioCards =
-      sortedPortfolio.map(listing =>
-        <PortfolioCard listing={listing} key={listing.id} />)
+      sortedPortfolio.slice(0, 3).map(listing =>
+        <SPAPortfolioCard listing={listing} key={listing.id} />)
 
     return (
-      <div id="fullpage">
-      	<div className="section" id="opening"><h1>Hi.</h1></div>
-      	<div className="section" id="welcome"><SPAWelcome/></div>
-        <div className="section" id="portfolio">{renderPortfolioCards}</div>
-      	<div className="section" id="blog">{renderBlogCards}</div>
-      	<div className="section" id="ending"><h1>Bye.</h1></div>
-      </div>
+      <SectionsContainer {...options}>
+      	<Section>
+          <div id="opening">
+            <h1>Hi! &nbsp;{emoji.emojify(':wave:')}</h1>
+            <h1><div className="emoji">{emoji.emojify(':point_down:')}</div></h1>
+          </div>
+        </Section>
+      	<Section><SPAWelcome/></Section>
+        <Section>
+            <h1 id="page-title">Recent Portfolio Items</h1>
+            <p id="subtitle">Visit my
+              <a href="https://www.linkedin.com/in/rabbigreenberg/"
+                target="_new"> LinkedIn</a> profile to view all
+                my portfolio items
+            </p>
+            <br />
+            {renderPortfolioCards}
+        </Section>
+      	<Section>
+          <h1 id="page-title">Recent Blog Posts</h1>
+          <p id="subtitle">Visit my
+            <a href="https://www.thecodingrabbi.com" target="_new"> blog </a> to
+            view all my blog posts
+          </p>
+          <br />
+          {renderBlogCards}
+        </Section>
+      	<Section>
+          <SPAContact />
+        </Section>
+      </SectionsContainer>
     );
   }
 }
