@@ -7,6 +7,7 @@ import SPABlogCard from './SPABlogCard';
 import SPAPortfolioCard from './SPAPortfolioCard';
 import SPAWelcome from '../SPAWelcome';
 import SPAContact from '../SPAContact';
+import {emojify} from 'react-emojione';
 
 class SPA extends React.Component {
 
@@ -85,7 +86,6 @@ class SPA extends React.Component {
   		lazyLoading: true,
 	  };
 
-    const emoji = require('node-emoji');
 
     var sortedBlog =
       this.props.blogPosts.sort(function(posting1, posting2) {
@@ -109,8 +109,9 @@ class SPA extends React.Component {
       <SectionsContainer {...options}>
       	<Section>
           <div id="opening">
-            <h1>Hi! &nbsp;{emoji.emojify(':wave:')}</h1>
-            <h1><div className="emoji">{emoji.emojify(':point_down:')}</div></h1>
+          {emojify('Easy! :wink: 😸 :D  ^__^')}
+            <h1>Hi! &nbsp;{emojify(':wave:')}</h1>
+            <h1><div className="emoji">{emojify(':point_down:')}</div></h1>
           </div>
         </Section>
       	<Section><SPAWelcome/></Section>
