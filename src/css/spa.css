@@ -1,0 +1,162 @@
+.Routes {
+  background-color: #ADD8E6;
+  position: fixed;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+}
+
+.footer {
+  position: fixed;
+}
+
+.footer .show-grid {
+  text-align: center;
+}
+
+#fullpage {
+  background-color: #ADD8E6;
+}
+
+#opening {
+  margin-top: 15%;
+}
+
+#opening h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 10em;
+}
+
+h1, h2, h3, h4, p {
+  color: black;
+}
+
+#page-title {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 5em;
+  color: black;
+}
+
+#subtitle {
+  font-family: 'Trocchi', serif;
+  font-size: 2em;
+}
+
+#headshot {
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#headshot:hover {
+}
+
+#blog-title {
+  font-family: 'Trocchi', serif;
+  color: white;
+  font-size: 300%;
+  text-shadow: 2px 4px 3px gray;
+}
+
+#blog-lead {
+  font-family: 'Trocchi', serif;
+  color: black;
+  font-size: 110%;
+  text-shadow: 2px 4px 3px gray;
+}
+
+#blog-content {
+  color: black;
+  font-size: 140%;
+}
+
+.blog-listing {
+  margin: auto;
+  height: auto;
+  width: 50%;
+  background-color: #ADD8E6;
+  border: 2px solid #535353;
+}
+
+#index-content {
+  font-family: 'Trocchi', serif;
+  font-size: 1.1em;
+}
+
+
+/* hover effects */
+
+.emoji:hover {
+  display: block;
+  width: auto;
+  transform: scale(1.1);
+}
+
+#contact-icon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.hvr-pop img {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active img {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
