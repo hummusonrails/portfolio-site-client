@@ -1,0 +1,227 @@
+/* CSS styling sheet */
+
+/* Main App styling */
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Permanent+Marker|Trocchi|Abril+Fatface|Open+Sans+Condensed:300');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, p {
+  color: white;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Header Title Styling */
+
+#title-heading {
+font-family: 'Abril Fatface', cursive;
+font-size: 300%;
+color: white;
+}
+
+#title-linetwo {
+  font-family: 'Indie Flower', cursive;
+  color: white;
+}
+
+#title-linethree {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 300%;
+  color: white;
+  display: inline-block;
+}
+
+#heading-img {
+  display: inline-block;
+}
+
+/* Main Content Styling */
+
+#page-title {
+  font-family: 'Trocchi', serif;
+  color: white;
+  font-size: 300%;
+}
+
+#index-content {
+  font-size: 110%;
+}
+
+#index-content #signature {
+  font-size: 110%;
+}
+
+#signature {
+  font-family: 'Indie Flower', cursive;
+  color: white;
+}
+
+/* Footer */
+
+/* Set the fixed height of the footer here */
+.footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: auto;
+  max-width: 0 auto;
+  padding: 0px 15px;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+/* Portfolio and Blog Listings Styling */
+
+.item-listing {
+  background-color: #DDDDDD;
+  border: 3px solid #0074D9;
+}
+
+.blog-listing {
+  background-color: #f8f8f8;
+  border: 2px solid #535353;
+  padding-top: 10px;
+  padding-bottom: 150px;
+
+}
+
+#blog-title {
+  font-family: 'Trocchi', serif;
+  color: white;
+  font-size: 300%;
+  text-shadow: 2px 4px 3px gray;
+}
+
+#blog-lead {
+  font-family: 'Trocchi', serif;
+  color: black;
+  font-size: 110%;
+  text-shadow: 2px 4px 3px gray;
+}
+
+#blog-content {
+  color: black;
+  font-size: 140%;
+}
+
+#form-label {
+  color: white;
+}
+
+.main-content {
+text-align: center;
+}
+
+[class*="span"].centred {
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+}
+
+#flash {
+  color: red;
+}
+
+/* Navigation Bar Styling */
+
+.navbar-inverse {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-default {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile Device Styling */
+
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  .App-header .container {
+    background-color: #222;
+    height: 60px;
+    padding: 20px;
+    color: white;
+    padding-bottom: 0px;
+  }
+
+  .container .container-fluid {
+    padding-top: 20em;
+  }
+
+  #title-heading {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50%;
+  color: white;
+  }
+
+  #title-linetwo {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+  }
+
+  #title-linethree {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50%;
+    color: white;
+    display: inline-block;
+  }
+
+  #blog-title {
+    font-family: 'Trocchi', serif;
+    color: white;
+    font-size: 50%;
+    text-shadow: 2px 4px 3px gray;
+    margin-top: 15px;
+  }
+
+}
