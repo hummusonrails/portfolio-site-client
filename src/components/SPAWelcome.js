@@ -13,7 +13,7 @@ class SPAWelcome extends React.Component {
             <div className="content">
                 <Col lg={6} md={6}>
                   <br /><br />
-                  <img src="/bg-headshot.jpg" width="70%" alt="Ben Greenberg" id="headshot" className="hvr-pop"/>
+                  <img src="/bg-headshot.jpg" alt="Ben Greenberg" id="headshot" className="hvr-pop"/>
                 </Col>
             </div>
 

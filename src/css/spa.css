@@ -45,6 +45,7 @@ h1, h2, h3, h4, p {
 }
 
 #headshot {
+  width: 70%;
   border-radius: 50%;
   box-shadow: 10px 10px 5px grey;
 }
