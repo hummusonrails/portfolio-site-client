@@ -4,4 +4,20 @@
     width: 30%;
   }
 
+  #page-title {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2em;
+    color: black;
+  }
+
+  #subtitle {
+    font-family: 'Trocchi', serif;
+    font-size: 1em;
+  }
+
+  #index-content {
+    font-family: 'Trocchi', serif;
+    font-size: 0.8em;
+  }
+
 }
