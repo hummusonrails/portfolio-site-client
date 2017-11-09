@@ -9,7 +9,7 @@ class SPAPortfolioCard extends React.Component {
       return (
         <Grid fluid={true}>
           <Row className="show-grid">
-              <div className="blog-listing">
+              <div className="blog-listing-container">
                 <Col md={6} lg={6} componentClass="blog-listing">
                   <img src={this.props.posting.image}
                     alt={this.props.posting.title} id="img-thumbnail"

@@ -79,6 +79,15 @@ h1, h2, h3, h4, p {
   border: 2px solid #535353;
 }
 
+.blog-listing-container {
+  margin: auto;
+  height: auto;
+  width: 50%;
+  padding-bottom: 100px;
+  background-color: #ADD8E6;
+  border: 2px solid #535353;
+}
+
 #index-content {
   font-family: 'Trocchi', serif;
   font-size: 1.1em;

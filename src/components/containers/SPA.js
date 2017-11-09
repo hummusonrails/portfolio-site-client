@@ -109,8 +109,7 @@ class SPA extends React.Component {
       <SectionsContainer {...options}>
       	<Section>
           <div id="opening">
-          {emojify('Easy! :wink: 😸 :D  ^__^')}
-            <h1>Hi! &nbsp;{emojify(':wave:')}</h1>
+            <h1>Hi! {emojify(':wave:')}</h1>
             <h1><div className="emoji">{emojify(':point_down:')}</div></h1>
           </div>
         </Section>
