@@ -107,6 +107,7 @@ class SPA extends React.Component {
         <SPAPortfolioCard listing={listing} key={listing.id} />)
 
     return (
+    <div>
       <MetaTags>
         <meta property="og:title" content="Ben Greenberg: Full Stack Web Developer"/>
         <meta property="og:description" content="Find Ben Greenberg's latest
@@ -154,8 +155,9 @@ class SPA extends React.Component {
       	<Section>
           <SPAContact />
         </Section>
-        
+
       </SectionsContainer>
+    </div>
     );
   }
 }
