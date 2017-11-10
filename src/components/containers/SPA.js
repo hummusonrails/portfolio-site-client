@@ -71,8 +71,8 @@ class SPA extends React.Component {
   		//Design
   		controlArrows: true,
   		verticalCentered: true,
-  		sectionPaddingTop: '5px',
-  		sectionPaddingBottom: '5px',
+  		sectionPaddingTop: '5',
+  		sectionPaddingBottom: '5',
   		fixedElements: '.footer',
   		responsiveWidth: 0,
   		responsiveHeight: 0,
