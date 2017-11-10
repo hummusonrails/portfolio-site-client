@@ -127,8 +127,8 @@ class SPA extends React.Component {
 
       	<Section>
           <div id="opening">
-            <h1>Hi! {emojify(':wave:')}</h1>
-            <h1><div className="emoji">{emojify(':point_down:')}</div></h1>
+            <h1 className="hvr-grow-shadow">Hi! {emojify(':wave:')}</h1>
+            <h1><div className="emoji"><a href="#portfolio">{emojify(':point_down:')}</a></div></h1>
           </div>
         </Section>
 
