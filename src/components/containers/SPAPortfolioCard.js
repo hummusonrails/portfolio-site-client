@@ -4,7 +4,6 @@ import { Grid, Col, Row } from 'react-bootstrap';
 class SPAPortfolioCard extends React.Component {
 
   render() {
-
     return (
       <div className="blog-listing">
         <Grid fluid={true}>
@@ -48,6 +47,5 @@ class SPAPortfolioCard extends React.Component {
     );
   }
 }
-
 
 export default SPAPortfolioCard;

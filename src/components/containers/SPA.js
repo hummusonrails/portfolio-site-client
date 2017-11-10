@@ -73,6 +73,7 @@ class SPA extends React.Component {
   		verticalCentered: true,
   		sectionPaddingTop: '5',
   		sectionPaddingBottom: '10',
+      sectionsColor: ['#ffffff', '#fff'],
   		fixedElements: '.footer',
   		responsiveWidth: 0,
   		responsiveHeight: 0,
@@ -105,6 +106,8 @@ class SPA extends React.Component {
     const renderPortfolioCards =
       sortedPortfolio.slice(0, 3).map(listing =>
         <SPAPortfolioCard listing={listing} key={listing.id} />)
+
+    const Carousel = require('nuka-carousel');
 
     return (
     <div>
@@ -139,7 +142,9 @@ class SPA extends React.Component {
                 my portfolio items
             </p>
             <br />
-            {renderPortfolioCards}
+            <Carousel>
+              {renderPortfolioCards}
+            </Carousel>
         </Section>
 
       	<Section>
