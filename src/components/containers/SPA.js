@@ -104,7 +104,7 @@ class SPA extends React.Component {
         <SPABlogCard posting={posting} key={posting.id} />)
 
     const renderPortfolioCards =
-      sortedPortfolio.slice(0, 3).map(listing =>
+      sortedPortfolio.map(listing =>
         <SPAPortfolioCard listing={listing} key={listing.id} />)
 
     const Carousel = require('nuka-carousel');
@@ -154,7 +154,9 @@ class SPA extends React.Component {
             view all my blog posts
           </p>
           <br />
-          {renderBlogCards}
+          <Carousel>
+            {renderBlogCards}
+          </Carousel>
         </Section>
 
       	<Section>
