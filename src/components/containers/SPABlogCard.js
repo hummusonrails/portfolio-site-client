@@ -9,24 +9,21 @@ class SPAPortfolioCard extends React.Component {
       return (
         <Grid fluid={true}>
           <Row className="show-grid">
-              <div className="blog-listing-container">
                 <Col md={6} lg={6} componentClass="blog-listing">
                   <img src={this.props.posting.image}
                     alt={this.props.posting.title} id="img-thumbnail"
-                    className="hvr-buzz" width="30%" height="30%"
+                    className="hvr-buzz" width="30%" height="100%"
                   />
                 </Col>
                 <Col md={6} lg={6}>
                   <strong>
                     <h2 id="blog-lead">{this.props.posting.title}</h2>
                   </strong>
-                  {snippet}
+                  <p id="blog-content">{snippet}</p>
                   <br /><br />
-                  <a href={this.props.posting.original_link} target="_new">
-                    Read More
-                  </a>
+                  <span id="blog-content"><a href={this.props.posting.original_link} target="_new">
+                    Read More</a></span>
                 </Col>
-              </div>
           </Row>
         </Grid>
     );

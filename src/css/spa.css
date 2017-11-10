@@ -72,22 +72,45 @@ h1, h2, h3, h4, p {
 
 #blog-content {
   color: black;
-  font-size: 140%;
+  font-size: 1.5em;
+}
+
+#blog-content a {
+  color: #0000EE;
+}
+
+#blog-content a:visited {
+  color: #551A8B;
+}
+
+.portfolio-listing {
+  margin: auto;
+  height: auto;
+  width: 62%;
+  padding-top: 5px;
+  background-color: #ADD8E6;
+  border-radius: 5%;
+  border: 2px solid #535353;
+  box-shadow: 10px 10px 5px gray;
 }
 
 .blog-listing {
   margin: auto;
   height: auto;
-  width: 50%;
+  width: 75%;
+  /*padding-top: 5px;
+  padding-bottom: 10px;*/
+  padding-right: 50px;
   background-color: #ADD8E6;
+  border-radius: 5%;
   border: 2px solid #535353;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px gray;
 }
 
 .blog-listing-container {
   margin: auto;
   height: auto;
-  width: 50%;
+  width: 62%;
   padding-bottom: 70px;
   background-color: #ADD8E6;
   border: 2px solid #535353;

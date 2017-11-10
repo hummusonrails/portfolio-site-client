@@ -142,9 +142,11 @@ class SPA extends React.Component {
                 my portfolio items
             </p>
             <br />
-            <Carousel>
-              {renderPortfolioCards}
-            </Carousel>
+            <div className="portfolio-listing">
+              <Carousel>
+                {renderPortfolioCards}
+              </Carousel>
+            </div>
         </Section>
 
       	<Section>
@@ -154,9 +156,13 @@ class SPA extends React.Component {
             view all my blog posts
           </p>
           <br />
-          <Carousel>
-            {renderBlogCards}
-          </Carousel>
+          <div className="blog-listing">
+          <div >
+              <Carousel>
+              {renderBlogCards}
+            </Carousel>
+            </div>
+          </div>
         </Section>
 
       	<Section>
