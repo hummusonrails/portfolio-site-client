@@ -13,7 +13,7 @@ class SPAPortfolioCard extends React.Component {
               <Col lg={6} md={3}>
                 <br /><br />
                 <img src={this.props.listing.image} alt={this.props.listing.name}
-                  id="img-thumbnail" className="hvr-buzz" width="70%" height="50%"/>
+                  id="img-thumbnail" className="hvr-buzz" width="80%" height="60%"/>
               </Col>
           </div>
 
