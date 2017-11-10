@@ -20,7 +20,7 @@ class SPAPortfolioCard extends React.Component {
           <Col lg={6} md={3}>
 
             <p id="blog-lead">{this.props.listing.name}</p>
-            <div id="index-content">
+            <div id="portfolio-content">
             {this.props.listing.description}
             <br /><br />
             { this.props.listing.link ?

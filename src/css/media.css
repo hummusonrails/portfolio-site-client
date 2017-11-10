@@ -20,11 +20,15 @@
 
   #index-content {
     font-family: 'Trocchi', serif;
-    font-size: 0.4em;
+    font-size: 0.7em;
   }
 
   #blog-content {
-    font-size: 0.4em;
+    display: none;
+  }
+
+  #portfolio-content {
+    display: none;
   }
 
   /* welcome paragraphs */

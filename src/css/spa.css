@@ -122,6 +122,10 @@ h1, h2, h3, h4, p {
   font-size: 1.1em;
 }
 
+#portfolio-content {
+  font-family: 'Trocchi', serif;
+  font-size: 1.1em;
+}
 
 /* hover effects */
 
