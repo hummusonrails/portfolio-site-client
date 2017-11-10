@@ -5,22 +5,26 @@
   }
 
   /* header sizes */
-  
+
   #page-title {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
   }
   #subtitle {
     font-family: 'Trocchi', serif;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   /* content text */
 
   #index-content {
     font-family: 'Trocchi', serif;
-    font-size: 0.8em;
+    font-size: 0.4em;
+  }
+
+  #blog-content {
+    font-size: 0.4em;
   }
 
   /* welcome paragraphs */
