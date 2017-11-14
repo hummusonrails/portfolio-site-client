@@ -22,7 +22,6 @@ export function loadMediumBlog() {
         console.log(err)
       } else {
         dispatch({ type: 'LOAD_MEDIUM_BLOG', data: rss })
-        console.log(rss)
       }
     });
   })

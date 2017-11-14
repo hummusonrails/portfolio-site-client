@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { loadMediumBlog } from '../../actions/BlogActions';
+import BlogIndexCard from './BlogIndexCard';
 
 class BlogIndex extends React.Component {
   componentDidMount() {
@@ -9,22 +10,22 @@ class BlogIndex extends React.Component {
 
   render() {
 
+    const renderBlogIndexCards =
+      this.props.blogPosts ?
+        this.props.blogPosts.map(post => <BlogIndexCard post={post} key={post.created}/>) :
+        "Please wait. Blog posts are loading..."
+
     return (
-      this.props.blogPosts.items ?
         <div>
-          <h1>{this.props.blogPosts.items[0].title}</h1>
+          {renderBlogIndexCards}
         </div>
-      :
-      <div>
-        <h1>Hello</h1>
-      </div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
   return ({
-    blogPosts: state.MediumBlogReducer.postings
+    blogPosts: state.MediumBlogReducer.postings.items
   })
 }
 
