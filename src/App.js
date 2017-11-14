@@ -10,6 +10,7 @@ import {
 import Footer from './components/Footer';
 // import NavbarInstance from './components/Navbar';
 import SPA from './components/containers/SPA';
+import BlogIndex from './components/blog/BlogIndex';
 import ReactGA from 'react-ga';
 
 const ReactRouter = () => (
@@ -23,6 +24,7 @@ const ReactRouter = () => (
         <Route exact path="/portfolio" component={SPA}/>
         <Route exact path="/blog" component={SPA}/>
         <Route exact path="/contact" component={SPA}/>
+        <Route exact path="/mediumblog" component={BlogIndex}/>
       </Switch>
     </div>
   </Router>

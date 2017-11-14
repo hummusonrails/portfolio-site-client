@@ -25,6 +25,7 @@
     "reactstrap": "^4.8.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+    "rss-to-json": "^1.0.3",
     "webpack-dev-server": "^2.8.0"
   },
   "scripts": {

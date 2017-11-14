@@ -12,6 +12,22 @@ export function loadTechBlog() {
   }
 )}
 
+export function loadMediumBlog() {
+  return (dispatch => {
+
+    const Feed = require('rss-to-json');
+
+    Feed.load('https://cors-anywhere.herokuapp.com/https://medium.com/feed/@rabbigreenberg', function(err, rss){
+      if (err) {
+        console.log(err)
+      } else {
+        dispatch({ type: 'LOAD_MEDIUM_BLOG', data: rss })
+        console.log(rss)
+      }
+    });
+  })
+}
+
 // export function loadJewishBlog() {
 //   return (dispatch => {
 //
