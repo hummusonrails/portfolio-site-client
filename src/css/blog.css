@@ -1,0 +1,13 @@
+.blog-cards-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-card-picture img {
+  width: 40px;
+}

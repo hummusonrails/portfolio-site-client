@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { loadMediumBlog } from '../../actions/BlogActions';
 import BlogIndexCard from './BlogIndexCard';
+import '../../css/blog.css';
 
 class BlogIndex extends React.Component {
   componentDidMount() {
@@ -16,7 +17,7 @@ class BlogIndex extends React.Component {
         "Please wait. Blog posts are loading..."
 
     return (
-        <div>
+        <div className="blog-cards-container">
           {renderBlogIndexCards}
         </div>
     )
