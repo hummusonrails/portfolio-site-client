@@ -100,7 +100,7 @@ class SPA extends React.Component {
       })
 
     const renderBlogCards =
-      sortedBlog.slice(0, 3).map(posting =>
+      sortedBlog.slice(0, 2).map(posting =>
         <SPABlogCard posting={posting} key={posting.id} />)
 
     const renderPortfolioCards =
@@ -150,9 +150,9 @@ class SPA extends React.Component {
         </Section>
 
       	<Section>
-          <h1 id="page-title">Recent Blog Posts</h1>
+          <h1 id="page-title">Most Recent Blog Posts</h1>
           <p id="subtitle">Visit my
-            <a href="https://www.thecodingrabbi.com" target="_new"> blog </a> to
+            <a href="/blog"> blog </a> to
             view all my blog posts
           </p>
           <br />

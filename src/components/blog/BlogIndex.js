@@ -22,6 +22,9 @@ class BlogIndex extends React.Component {
 
     return (
       <div className="page-wrapper">
+        <div className="blog-nav">
+        <button id="home-button"><a href="/">Home</a></button>
+        </div>
         <h1 id="blog-home-title">Blog Posts</h1>
         <div className="blog-cards-container">
           {renderBlogIndexCards}

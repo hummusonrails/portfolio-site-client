@@ -11,6 +11,29 @@
   padding-bottom: 100px;
 }
 
+.blog-nav {
+  position: absolute;
+}
+
+#home-button {
+  background: #d3d3d3;
+  background-image: -webkit-linear-gradient(top, #d3d3d3, #e0e0e0);
+  background-image: -moz-linear-gradient(top, #d3d3d3, #e0e0e0);
+  background-image: -ms-linear-gradient(top, #d3d3d3, #e0e0e0);
+  background-image: -o-linear-gradient(top, #d3d3d3, #e0e0e0);
+  background-image: linear-gradient(to bottom, #d3d3d3, #e0e0e0);
+  font-family: 'Fredericka the Great', cursive;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 0 0 25px 50px;
+}
+
+#home-button a:hover {
+  text-decoration: none;
+}
+
 #blog-home-title {
   font-family: 'Fredericka the Great', cursive;
   font-size: 10em;

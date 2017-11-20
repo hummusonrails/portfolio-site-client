@@ -22,9 +22,8 @@ const ReactRouter = () => (
       <Switch>
         <Route exact path="/" component={SPA}/>
         <Route exact path="/portfolio" component={SPA}/>
-        <Route exact path="/blog" component={SPA}/>
         <Route exact path="/contact" component={SPA}/>
-        <Route exact path="/mediumblog" component={BlogIndex}/>
+        <Route exact path="/blog" component={BlogIndex}/>
       </Switch>
     </div>
   </Router>
