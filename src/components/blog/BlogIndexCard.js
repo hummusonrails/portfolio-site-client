@@ -1,24 +1,33 @@
 import React from 'react';
-import jQuery from 'jquery';
 
 class BlogIndexCard extends React.Component {
-  componentDidMount() {
-    let path = 'http://localhost:3000/',
-      imgs = ['www_icon.png', 'youtube_icon.png', 'linkedin_icon.png'],
-      i = Math.floor(Math.random()*imgs.length);
-      jQuery('.blog-card-picture').append("<img src='"+path+imgs[i]+"'/>")
-        .hide().fadeIn(2000);
-    }
 
   render() {
-
     console.log(this.props.post)
+
+    let blogSnippet =
+      this.props.post ?
+        this.props.post.content.slice(0, 500) : "Content is loading..."
+
     return (
-      <div className="blog-card">
-        <div className="blog-card-picture">
+      <div className="blog-card-wrapper">
+        <div className="blog-card-header">
+          <div className="blog-card-title">
+            <h1>{this.props.post.title}</h1>
+          </div>
         </div>
         <div className="blog-card-content">
-          <h1>{this.props.post.title}</h1>
+          <div className="blog-card-picture">
+            <img src={this.props.post.image} alt="Blog post"/>
+          </div>
+          <div className="blog-card-snippet">
+            <span id="blog-date"><p>Published:<br/>{this.props.post.created_on}</p></span>
+            <p>{blogSnippet}...</p>
+            <button id="blog-readmore"><a href={this.props.post.original_link} target="_new">Read More</a></button>
+          </div>
+        </div>
+        <div className="post-divider">
+          <h1>. . . . . </h1>
         </div>
       </div>
     )

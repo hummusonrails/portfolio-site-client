@@ -1,33 +1,40 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { loadMediumBlog } from '../../actions/BlogActions';
+import { loadTechBlog } from '../../actions/BlogActions';
 import BlogIndexCard from './BlogIndexCard';
 import '../../css/blog.css';
 
 class BlogIndex extends React.Component {
   componentDidMount() {
-    this.props.loadMediumBlog()
+    this.props.loadTechBlog()
   }
 
   render() {
 
-    const renderBlogIndexCards =
+    let sortedBlog =
       this.props.blogPosts ?
-        this.props.blogPosts.map(post => <BlogIndexCard post={post} key={post.created}/>) :
-        "Please wait. Blog posts are loading..."
+      this.props.blogPosts.sort(function(posting1, posting2) {
+        return posting2.id - posting1.id;
+      }) : "Please wait while the blog posts load..."
+
+    const renderBlogIndexCards =
+        sortedBlog.map(post => <BlogIndexCard post={post} key={post.id}/>)
 
     return (
+      <div className="page-wrapper">
+        <h1 id="blog-home-title">Blog Posts</h1>
         <div className="blog-cards-container">
           {renderBlogIndexCards}
         </div>
+      </div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
   return ({
-    blogPosts: state.MediumBlogReducer.postings.items
+    blogPosts: state.BlogReducer.postings
   })
 }
 
-export default connect(mapStateToProps, { loadMediumBlog })(BlogIndex);
+export default connect(mapStateToProps, { loadTechBlog })(BlogIndex);
