@@ -86,7 +86,7 @@
   overflow: scroll;
 }
 
-#blog-readmore {
+#blog-readmore, #blog-share {
   align-items: flex-end;
   border-radius: 28px;
   box-shadow: 0px 1px 3px #666666;
@@ -98,7 +98,7 @@
   text-decoration: none;
 }
 
-#blog-readmore a:hover {
+#blog-readmore, #blog-share a:hover {
   text-decoration: none;
 }
 
@@ -119,6 +119,10 @@ button a {
   color: #ffffff;
   text-decoration: none;
   font-family: 'Trocchi', serif;
+}
+
+.blog-share-section {
+  display: none;
 }
 
 .post-divider h1 {
