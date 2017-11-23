@@ -8,7 +8,7 @@ This is a portfolio site front end built with ReactJS and Redux middleware. It w
 
 ## Installation
 
-To use this frontend can use the 'create-react-app' cli in your terminal and then download the contents of this repository into your project directory. Running 'npm start' from the command line will initiate a localhost server running this frontend and will automatically load it in your default web browser.
+To use this frontend client, simply fork a copy of it and then clone it down into your local server. You need to install the required Node packages with your preferred node package manager. Running `npm start`, for example, will boot up a localhost server.
 
 This frontend assumes a relationship with an API to fetch the data for the site.
 
