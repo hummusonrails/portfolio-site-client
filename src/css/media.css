@@ -63,7 +63,7 @@
 
   .blog-card-wrapper {
     width: 100%;
-    justify-content: center space-between;
+    /*justify-content: center space-between;*/
     background-color: white;
     padding-bottom: 5px;
   }
@@ -85,10 +85,10 @@
     display: none;
   }
 
-
-  .blog-card-snippet {
-    width: 100%;
-    font-size: 1vh;
+  .blog-card-content .blog-card-snippet {
+    padding-right: 0;
+    width: auto;
+    font-size: 2vh;
   }
 
   #blog-readmore {
