@@ -56,18 +56,13 @@
 
   /* Blog Page */
 
-  .blog-cards-container {
-    padding-left: 25px;
-    padding-bottom: 25px;
-  }
-
   #blog-home-title {
     font-size: 0.2em;
     padding-bottom: 5px;
   }
 
   .blog-card-wrapper {
-    width: 98%;
+    width: 100%;
     justify-content: center space-between;
     background-color: white;
     padding-bottom: 5px;
@@ -90,12 +85,10 @@
     display: none;
   }
 
-  .blog-card-picture img {
-    width: 2vh;
-  }
 
   .blog-card-snippet {
-    font-size: 2vh;
+    width: 100%;
+    font-size: 1vh;
   }
 
   #blog-readmore {
@@ -117,7 +110,7 @@
   }
 
   #blog-readmore a {
-    font-size: 18px;
+    font-size: 28px;
   }
 
   .post-divider h1 {
