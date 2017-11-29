@@ -25,7 +25,7 @@ class SPAWelcome extends React.Component {
                   <br />
                   <p id="paragraph2">After a decade of non-profit communal service, I've come back to the tech sector. During the 1990s I co-founded a computer security firm and co-founded Southern California's largest computer security conference. I've returned to my tech roots as a recent graduate of the Flatiron School and now spend my time on open source projects, on freelancing and as an Online Technical Coach at WeWork.</p>
                   <br />
-                  <p id="paragraph3">Please browse a sampling of my portfolio and my blog posts on this site. You can find the rest of my blog posts at <a href="http://www.thecodingrabbi.com" target="_new">thecodingrabbi.com</a> and my complete portfolio on <a href="https://www.linkedin.com/in/rabbigreenberg/" target="_new">LinkedIn</a>.</p>
+                  <p id="paragraph3">Please browse a sampling of my portfolio and my blog posts on this page. You are welcome to view my <a href="/videos">video lectures</a>, all my <a href="/blog">blog posts</a> and my complete <a href="https://www.linkedin.com/in/rabbigreenberg/" target="_new">portfolio</a>.</p>
                   <br />
                   <p>I look forward to being in touch!</p>
                   <p id="signature">Ben Greenberg</p>
