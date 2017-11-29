@@ -13,7 +13,7 @@ class BlogIndexCard extends React.Component {
       event.preventDefault();
       let shareElement = document.getElementsByClassName("blog-share-section");
       for (let i = 0; i < shareElement.length; i++) {
-        if (shareElement[i].id === buttonId) {
+        if (shareElement[i].id == buttonId) {
           if (shareElement[i].style.display === "block") {
             shareElement[i].style.display = "none";
           } else {
