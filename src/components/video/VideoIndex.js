@@ -26,7 +26,7 @@ class VideoIndex extends React.Component {
         <button id="home-button"><a href="http://bengreenberg.org">Home</a></button>
         </div>
         <h1 id="blog-home-title">Videos</h1>
-        <div className="blog-cards-container">
+        <div className="video-cards-container">
           {renderVideoIndexCards}
         </div>
       </div>
