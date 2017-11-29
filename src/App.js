@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 // import NavbarInstance from './components/Navbar';
 import SPA from './components/containers/SPA';
 import BlogIndex from './components/blog/BlogIndex';
+import VideoIndex from './components/video/VideoIndex';
 import ReactGA from 'react-ga';
 
 const ReactRouter = () => (
@@ -24,6 +25,7 @@ const ReactRouter = () => (
         <Route exact path="/portfolio" component={SPA}/>
         <Route exact path="/contact" component={SPA}/>
         <Route exact path="/blog" component={BlogIndex}/>
+        <Route exact path="/videos" component={VideoIndex}/>
       </Switch>
     </div>
   </Router>

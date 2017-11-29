@@ -10,10 +10,12 @@ import './css/fullpage.css';
 import registerServiceWorker from './registerServiceWorker';
 import PortfolioReducer from './reducers/PortfolioReducer';
 import BlogReducer from './reducers/BlogReducer';
+import VideoReducer from './reducers/VideoReducer';
 
 const reducers = combineReducers({
     PortfolioReducer,
-    BlogReducer
+    BlogReducer,
+    VideoReducer
 });
 
 const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), applyMiddleware(thunk));
