@@ -130,6 +130,7 @@
 
   .video-card-wrapper {
     flex-grow: 1;
+    width: 100%;
     padding-bottom: 60px;
   }
 
