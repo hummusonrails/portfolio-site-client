@@ -121,4 +121,16 @@
     display: none;
   }
 
+
+  /* VIDEO PAGE */
+
+  .video-cards-container {
+    flex-flow: column wrap;
+  }
+
+  .video-card-wrapper {
+    flex-grow: 1;
+    padding-bottom: 60px;
+  }
+
 }
