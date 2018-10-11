@@ -9,7 +9,6 @@ class VideoIndexCard extends React.Component {
       this.props.video.tags ?
         this.props.video.tags.split(",") : null
 
-        debugger
 
     return (
       <div className="video-card-wrapper">

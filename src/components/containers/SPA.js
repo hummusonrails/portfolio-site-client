@@ -109,7 +109,9 @@ class SPA extends React.Component {
 
     const Carousel = require('nuka-carousel');
 
+
     return (
+
     <div>
       <MetaTags>
         <meta property="og:title" content="Ben Greenberg: Full Stack Web Developer"/>
