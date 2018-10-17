@@ -50,7 +50,7 @@
 
 
 .blog-card-header {
-  display: flex;
+  /*display: flex;*/
   flex-direction: row;
   justify-content: center space-between;
   margin: 10px;
