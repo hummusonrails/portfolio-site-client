@@ -9,6 +9,7 @@ import SPAWelcome from '../SPAWelcome';
 import SPAContact from '../SPAContact';
 import {emojify} from 'react-emojione';
 import MetaTags from 'react-meta-tags';
+import Typed from 'react-typed';
 
 class SPA extends React.Component {
 
@@ -129,7 +130,34 @@ class SPA extends React.Component {
 
       	<Section>
           <div id="opening">
-            <h1 className="hvr-grow-shadow">Hi!</h1> <span className="hvr-buzz">{emojify(':wave:')}</span>
+            <h1 className="hvr-grow-shadow">
+              <Typed 
+                strings={
+                  [
+                    'Hi!', 
+                    'Welcome!', 
+                    'Scroll down!', 
+                    'You won\'t regret it', 
+                    'I promise...',
+                    'There\'s videos,', 
+                    'blog posts',
+                    'and other things to check out!',
+                    'So glad you\'re here!'
+                  ]
+                }
+                loop={true}
+                typeSpeed={90}
+                backSpeed={30}
+                smartBackspace
+                shuffle={false}
+                backDelay={1000}
+                showCursor
+                cursorChar="|"
+              />
+            </h1> 
+            <span className="hvr-buzz">
+              {emojify(':wave:')}
+            </span>
             <h1><div className="emoji"><a href="#welcome">{emojify(':point_down:')}</a></div></h1>
           </div>
         </Section>
