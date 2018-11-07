@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import ReactDOM from 'react-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+//import 'bootstrap/dist/css/bootstrap-theme.css';
 import './css/fullpage.css';
 import registerServiceWorker from './registerServiceWorker';
 import PortfolioReducer from './reducers/PortfolioReducer';
