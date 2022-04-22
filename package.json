@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "3.4.1",
-    "fullpage.js": "^2.9.7",
+    "fullpage.js": "^4.0.5",
     "hover.css": "^2.3.2",
     "jquery": "^3.4.0",
     "node-emoji": "^1.8.1",
